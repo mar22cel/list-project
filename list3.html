@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        ul{
+            background-color: green;
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+            float: left;
+        }
+        li{
+            float: left;
+            list-style: none;
+            padding: 10px;
+            position: relative;
+            left: 500px;
+            cursor: pointer;
+        }
+        li:hover{
+            background: brown;
+        }
+        ul::after{
+            clear: both;
+            content: "";
+            display: block;
+        }
+        @media (max-width:768px){
+            li:hover{
+            background: brown;
+        }
+            li{
+            float: none;
+            list-style: none;
+            padding: 20px;
+            position: relative;
+            left: 0px;
+            cursor: pointer;
+        }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">LOG IN</a></li>
+        <li><a href="#">LOG OUT</a></li>
+        <li><a href="#">SUPPORT</a></li>
+        <li><a href="#">CONTACTS</a></li>
+    </ul>
+</body>
+</html>
